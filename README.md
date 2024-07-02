@@ -1,2 +1,13 @@
-# java
-Repository for tracking daily Java learning progress. Includes daily logs, code snippets, and small projects to improve Java skills and understanding of programming concepts. Personal use for self-improvement and practice.
+# Java Learning Repository
+
+This repository tracks my daily progress in learning Java. It includes daily logs, code snippets, and small projects to improve my Java skills.
+...
+
+## Code Snippets
+
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
