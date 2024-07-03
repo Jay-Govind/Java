@@ -32,7 +32,7 @@ public class input {
         float marks = sc.nextFloat();
         System.out.println("Enter your Mobile Number : ");
         long mobileNumber = sc.nextLong();
-
+        
 
         // Output
         System.out.println("---------------------------------------------");
