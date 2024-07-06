@@ -35,7 +35,7 @@ Conditional Statements in Java
 
 3. Ternary 
     syntax --> 
-            (condition) ? statement1 : statement2;
+            (condition) ? statement1(true) : statement2(false);
 
 
 4. switch
@@ -47,7 +47,7 @@ Conditional Statements in Java
                 case constant2:
                     statement2;
                     break;
-                default:
+                default:    // (if not matched)
                     statement3;
                     break;
             }
