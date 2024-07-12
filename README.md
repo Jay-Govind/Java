@@ -49,5 +49,15 @@ public class HelloWorld {
  - do while (Exit Checking Loop)
  - `break` and `continue` Keywords
 
+<br>
 
+ > ## Day 5 
+  Learned about `Pattern Printing` using `Nested Looping Statements` in Java. 
+ - Simple Patterns like `Square`, `Rectangle`, `Upper Triangle`, `Lower Triangle` & `Character Pattern`
+
+ ```
+ | * * *  | * * * * |  *        | * * * | A     |
+ | * * *  | * * * * |  * *      | * *   | B C   |
+ | * * *  | * * * * |  * * *    | *     | D E F |
+ ```
 
