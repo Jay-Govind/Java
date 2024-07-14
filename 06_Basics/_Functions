@@ -76,3 +76,5 @@ Functions/ Methods In Java
         returnType functionName(dataType arg1, dataType arg2, ...) {
             // function body
         }
+
+// Note : For clear clarity, check sum.java file in 06_Basics folder (same folder as this file)
