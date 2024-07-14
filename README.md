@@ -61,3 +61,15 @@ public class HelloWorld {
  | * * *  | * * * * |  * * *    | *     | 1 2 3 | 1     | D E F |
  ```
 
+<br>
+
+ > ## Day 6 
+  Learned about `Functions` in Java. 
+ - Parameters v/s Arguments
+ - Call by Value
+ - Inbuilt v/s User Defined Methods
+ - Functions Overloading
+ - Binary to Decimal and Decimal to Binary
+ - Scope - ( `Method` Scope & `Block` Scope )
+
+<br>
