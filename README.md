@@ -23,7 +23,7 @@ public class HelloWorld {
 
 <br>
 
- > ## Day 2 
+ > ## Day 2  - [Click Me](https://github.com/Jay-Govind/java/tree/eb5ed7ba5f0c605a50880a27300e5b3316bf1b68/02_Basics)
   Learned about `Operators` in Java. 
  -  Arithmetic Operator (Unary & Binary)
  -  Relational Operator
