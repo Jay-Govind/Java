@@ -16,6 +16,9 @@ public class HelloWorld {
 <br>
 
 # Assignment Questions with Solution - [Click Me👍](https://github.com/Jay-Govind/java/tree/49c84d9e6e64145d109bb775d963cd8c79d1a4df/Assignment)
+
+## Self Practice (Extra Questions) - [Click Me](https://github.com/Jay-Govind/java/tree/d38fdae02d57658f180a660c037cb26ce49ce626/Practice/conditional)
+
 <br>
 
 # Daily Progress: ⤴️
