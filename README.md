@@ -69,7 +69,7 @@ public class HelloWorld {
 
 <br>
 
- > ## Day 6 
+ > ## Day 6  - [Click Me](https://github.com/Jay-Govind/java/tree/b3d9f1c2203f483512d0c5d477d6f0da4d610e34/06_Basics)
   Learned about `Functions` in Java. 
  - Parameters v/s Arguments
  - Call by Value
