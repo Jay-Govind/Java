@@ -16,7 +16,7 @@ public class HelloWorld {
 <br>
 
 # Daily Progress: ⤴️
- > ## Day 1 
+ > ## Day 1  - [Click Me](https://github.com/Jay-Govind/java/tree/378c9b3de4d19803e4feab499b0deb69eca391e1/01_Basics)
   Learned about `Variables` and `Data types` in Java. 
  - Practiced declaring variables and initializing them with different data types (`int`, `double`, `String`). 
  - Java supports 8 primitive data types and 4 non-primitive data types
