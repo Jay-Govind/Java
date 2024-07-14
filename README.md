@@ -42,7 +42,7 @@ public class HelloWorld {
 
 <br>
 
- > ## Day 4 
+ > ## Day 4  - [Click Me](https://github.com/Jay-Govind/java/tree/c258eb0c91f34d9d9a2712ea6c917af7a10891d1/04_Basics)
   Learned about `Looping Statements` in Java. 
  - for loop
  - while loop (Entry Checking Loop)
@@ -51,7 +51,7 @@ public class HelloWorld {
 
 <br>
 
- > ## Day 5 
+ > ## Day 5  - [Click Me](https://github.com/Jay-Govind/java/tree/c258eb0c91f34d9d9a2712ea6c917af7a10891d1/05_Basics)
   Learned about `Pattern Printing` using `Nested Looping Statements` in Java. 
  - Simple Patterns like `Square`, `Rectangle`, `Upper Star Triangle`, `Lower Star Triangle`, `Upper Number Triangle`, `Lower Number Triangle` & `Character Pattern`
 
