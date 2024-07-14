@@ -33,7 +33,7 @@ public class HelloWorld {
 
 <br>
 
- > ## Day 3 
+ > ## Day 3  - [Click Me](https://github.com/Jay-Govind/java/tree/4f7185d4656d389be399dd67dc4bf7941a484af0/03_Basics)
   Learned about `Conditional Statements` in Java. 
  - if statement
  - else if statement
