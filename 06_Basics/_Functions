@@ -4,6 +4,7 @@ Functions/ Methods In Java
     Syntax --> 
         functionName(dataType arg1, dataType arg2, ...);
 
+// Note: In Java, when you define a method inside a class, it's critical to ensure that method names do not conflict with class names or other reserved identifiers.
 
 2. Function Definition
     Syntax --> 
