@@ -62,9 +62,9 @@ public class HelloWorld {
  - Simple Patterns like `Square`, `Rectangle`, `Upper Star Triangle`, `Lower Star Triangle`, `Upper Number Triangle`, `Lower Number Triangle` & `Character Pattern`
 
  ```
- | * * *  | * * * * |  *        | * * * | 1     | 1 2 3 | A     |
- | * * *  | * * * * |  * *      | * *   | 1 2   | 1 2   | B C   |
- | * * *  | * * * * |  * * *    | *     | 1 2 3 | 1     | D E F |
+      |  * * *   |  * * * *  |   *        |  * * *  |  1      |  1 2 3  |  A      |
+      |  * * *   |  * * * *  |   * *      |  * *    |  1 2    |  1 2    |  B C    |
+      |  * * *   |  * * * *  |   * * *    |  *      |  1 2 3  |  1      |  D E F  |
  ```
 
 <br>
