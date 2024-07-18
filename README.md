@@ -79,3 +79,17 @@ public class HelloWorld {
  - Scope - ( `Method` Scope & `Block` Scope )
 
 <br>
+
+ > ## Day 7  - [Click Me](https://github.com/Jay-Govind/java/tree/c177b148d20b7c607d65762ee69a3bcf8b0b20bb/07_AdvancePatterns)
+  Learned about `Advance Patterns` in Java. 
+ - Patterns like `Hollow Rectangle`, `Inverted Star Triangle`, `FLOYD's Triangle`, `0-1 Triangle`, `Butterfly Pattern`, `Solid Rhombus`, `Hollow Rhombus` & `Diamond`
+
+ ```
+| * * * * | * * * * * | 1              | 1         | *       * |         * * * * * |         * * * * * |     *     |
+| *     * |   * * * * | 2 3            | 0 1       | * *   * * |       * * * * *   |       *       *   |   * * *   |
+| *     * |     * * * | 4 5 6          | 1 0 1     | * * * * * |     * * * * *     |     *       *     | * * * * * | 
+| *     * |       * * | 7 8 9 10       | 0 1 0 1   | * *   * * |   * * * * *       |   *       *       |   * * *   |
+| * * * * |         * | 11 12 13 14 15 | 1 0 1 0 1 | *       * | * * * * *         | * * * * *         |     *     |
+```
+
+<br>
