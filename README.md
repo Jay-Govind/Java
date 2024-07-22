@@ -94,7 +94,7 @@ public class HelloWorld {
 
 <br>
 
- > ## Day 8  - [Click Me]()
+ > ## Day 8  - [Click Me](https://github.com/Jay-Govind/java/tree/4ab4831fb4384aaf23fdf0f1f8239b419f64d0f1/08_Arrays)
   Learned about `Arrays part-1` in Java. 
  - Input, Output, Updation.
  - Arrays as function arguments.
