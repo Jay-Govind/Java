@@ -93,3 +93,13 @@ public class HelloWorld {
 ```
 
 <br>
+
+ > ## Day 8  - [Click Me]()
+  Learned about `Arrays part-1` in Java. 
+ - Input, Output, Updation.
+ - Arrays as function arguments.
+ - Linear search.
+ - Binary Search.
+
+ <br>
+ 
