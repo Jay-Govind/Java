@@ -103,3 +103,12 @@ public class HelloWorld {
 
  <br>
  
+ > ## Day 9  - [Click Me](https://github.com/Jay-Govind/java/tree/4ab4831fb4384aaf23fdf0f1f8239b419f64d0f1/08_Arrays)
+  Learned about `Arrays part-2` in Java. 
+ - Max Sum of pair of Array using `Brute Force`.
+ - Max Sum of pair of Array using `Prefix Sum`.
+ - Max Sum of pair of Array using `Kadane's Algorithm`.
+ - Trapping Water (Leetcode Question)
+ - Buy and Sell Stocks.
+
+ <br>
