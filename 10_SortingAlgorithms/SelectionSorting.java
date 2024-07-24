@@ -6,19 +6,17 @@ public class SelectionSorting {
 
         for (int i = 0; i < arr.length - 1; i++) {
 
-            int minPos = i;
+            int minPosition = i;
 
             for (int j = (i + 1); j < arr.length - 1; j++) {
-
-                if (arr[minPos] > arr[j]) {
-                    minPos = j;
+                if (arr[minPosition] > arr[j]) {
+                    minPosition = j;
                 }
-
             }
 
             int temp = arr[i];
-            arr[i] = arr[minPos];
-            arr[minPos] = temp;
+            arr[i] = arr[minPosition];
+            arr[minPosition] = temp;
         }
     }
 
