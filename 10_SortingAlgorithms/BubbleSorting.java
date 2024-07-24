@@ -5,17 +5,21 @@ public class BubbleSorting {
     public static void bubbleSort(int[] arr) {
 
         for (int turn = 0; turn < arr.length - 1; turn++) {
-
+            boolean sorted = true;
             for (int j = 0; j < arr.length - 1 - turn; j++) {
 
                 if (arr[j] > arr[j + 1]) {
 
                     // swap
-                    arr[j] = arr[j] + arr[j + 1];
-                    arr[j + 1] = arr[j] - arr[j + 1];
-                    arr[j] = arr[j] - arr[j + 1];
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+
+                    sorted = false;
                 }
             }
+            if (sorted)
+                break;
         }
     }
 
@@ -45,7 +49,9 @@ public class BubbleSorting {
 
         bubbleSort(arr);
 
-        printArr(arr);
+        System.out.print("Sorted array : ");
+        System.out.println(Arrays.toString(arr)); // built in function
+        // printArr(arr); // my function
 
         sc.close();
     }
