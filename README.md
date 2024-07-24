@@ -112,3 +112,13 @@ public class HelloWorld {
  - Buy and Sell Stocks.
 
  <br>
+ 
+ > ## Day 10  - [Click Me](https://github.com/Jay-Govind/java/tree/74f722bc833bb2b758cce0c6744694cf18a5d34d/10_SortingAlgorithms)
+  Learned about `Sorting Algorithm` in Java. 
+ - `Bubble Sort`      - O(n^2)
+ - `Insertion Sort`   - O(n^2)
+ - `Selection Sort`   - O(n^2)
+ - `inbuilt Sort`     - O(nlogn)
+ - `Counting Sort`    - O(n+k)
+
+ <br>
