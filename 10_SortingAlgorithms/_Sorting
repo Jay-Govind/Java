@@ -40,5 +40,12 @@ Sorting in Java
 
 
     ### Selection Sort
+        Definition - In this algorithm, we compare the elements and swap them if they are not in order.
+
+
     ### Insertion Sort
+        Definition - In this algorithm, we compare the elements and insert them in correct position.
+
+
     ### Counting Sort (Advance)
+        Definition - In this algorithm, we count the number of occurance of each element and insert it in correct position. It is used only for positive integer
