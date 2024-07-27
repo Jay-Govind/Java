@@ -1,5 +1,7 @@
 package Practice.Sorting;
 
+import java.util.*;
+
 public class DictionaryOrder {
 
     public static void dictionarySort(String[] words) {
@@ -26,9 +28,21 @@ public class DictionaryOrder {
     }
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        String[] words = { "Computer", "Arpanet", "arpanet", "Banking", "Mouse" };
+        // input
+        System.out.print("How many words you want to enter : ");
+        int size = sc.nextInt();
+        String[] words = new String[size];
 
+        sc.nextLine(); // Consume newline character left by nextInt()
+
+        for (int i = 0; i < words.length; i++) {
+            System.out.print("Enter word " + (i + 1) + " : ");
+            words[i] = sc.nextLine().trim();
+        }
+
+        sc.close();
         dictionarySort(words);
 
         for (int i = 0; i < words.length; i++) {
