@@ -27,7 +27,7 @@ public class SpiralMatrix {
         int endCol = matrix[0].length - 1;
 
         System.out.println("__spiral matrix__");
-        while (startRow <= endRow && startCol <= endRow) {
+        while (startRow <= endRow && startCol <= endCol) {
 
             // top
             for (int j = startCol; j <= endCol; j++) {
