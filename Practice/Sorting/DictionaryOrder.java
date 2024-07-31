@@ -33,9 +33,8 @@ public class DictionaryOrder {
         // input
         System.out.print("How many words you want to enter : ");
         int size = sc.nextInt();
-        String[] words = new String[size];
-
         sc.nextLine(); // Consume newline character left by nextInt()
+        String[] words = new String[size];
 
         for (int i = 0; i < words.length; i++) {
             System.out.print("Enter word " + (i + 1) + " : ");
