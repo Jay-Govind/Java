@@ -125,9 +125,17 @@ public class HelloWorld {
  
  > ## Day 11  - [Click Me](https://github.com/Jay-Govind/java/tree/eba98ec6edd566934909aa93375d1aedb8f85cef/11_2DArray)
   Learned about `2D Array` in Java. 
- - creation od 2D Arrays
+ - creation of 2D Arrays
  - Spiral matrix
  - Diagonal Sum
  - Search in Sorted matrix
+
+ <br>
+ 
+ > ## Day 12  - [Click Me](https://github.com/Jay-Govind/java/tree/5acd4f1ed5d20209a65dc51aef68097f6a8e176c/12_Strings)
+  Learned about `Strings` in Java. 
+ - Input/ output
+ - Various string methods
+ - Why Strings are immutable ?
 
  <br>
