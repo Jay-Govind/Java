@@ -35,6 +35,9 @@ public class Substring {
 
         System.out.println("The substring is : " + subString(str, start, end));
 
+        // in built function
+        System.out.println("The substring is : " + str.substring(start, end));
+
         sc.close();
     }
 }
