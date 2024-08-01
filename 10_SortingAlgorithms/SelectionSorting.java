@@ -8,7 +8,7 @@ public class SelectionSorting {
 
             int minPosition = i;
 
-            for (int j = (i + 1); j < arr.length - 1; j++) {
+            for (int j = (i + 1); j < arr.length; j++) {
                 if (arr[minPosition] > arr[j]) {
                     minPosition = j;
                 }
