@@ -6,7 +6,6 @@ public class InsertionSorting {
     public static void insertionSort(int[] arr) {
 
         for (int i = 1; i < arr.length; i++) {
-
             int curr = arr[i];
             int prev = i - 1;
 
@@ -14,7 +13,6 @@ public class InsertionSorting {
                 arr[prev + 1] = arr[prev];
                 prev--;
             }
-
             arr[prev + 1] = curr;
         }
     }
