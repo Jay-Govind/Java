@@ -10,9 +10,10 @@ public class continueQuestion {
                 continue;
             }
             System.out.println("Number is : " + num + " ");
+            break;
         } while (true);
 
-        // sc.close();
+        sc.close();
     }
 }
 
