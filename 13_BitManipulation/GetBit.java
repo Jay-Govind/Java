@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Get {
+public class GetBit {
 
     public static int getIthBit(long num, int position) {
         long bitMask = 1L << position;
