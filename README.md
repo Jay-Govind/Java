@@ -140,3 +140,16 @@ public class HelloWorld {
  - `String Builder` in java
 
  <br>
+ 
+ > ## Day 13  - [Click Me](https://github.com/Jay-Govind/java/tree/6f80845147623540ddb507137243097bb215920c/13_BitManipulation)
+  Learned about `Bit Manipulation` in Java. 
+ - Bitwise operators ( `&`, `|`, `^`, `~`, `<<`, `>>` )
+ - Get `ith` Bit
+ - Set `ith` Bit
+ - Clear `ith` Bit
+ - Update `ith` Bit
+ - Clear last `i` Bits
+ - Clear range of Bits
+ - Some questions using Bit Manipulation
+
+ <br>
