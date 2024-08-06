@@ -3,8 +3,10 @@ import java.util.*;
 public class IncreasingOrder {
 
     public static void increasingOrder(int num) {
-        if (num == 0)
+        if (num == 1) {
+            increasingOrder(num - 1);
             return;
+        }
 
         increasingOrder(num - 1);
         System.out.print(num + " ");
