@@ -1,4 +1,18 @@
 // Recursion
 
-Definition : 
-    Recursion is a method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem.
+1) Definition : 
+        Recursion is a method of solving a computational problem where the solution depends on solutions to smaller instances of the same problem.
+
+2) Recursive function :
+        A function that calls itself again and again till it reaches the base case.
+
+
+3) Base Case:
+        A condition that terminates the recursion call.
+
+
+4) Direction of recursion :
+        - A direction in which the function will call itself.
+        - Types:
+            a) Upward direction/ Forward direction - From bottom to top or from left to right
+            b) Downward direction/ Backward direction - From top to bottom or from right to left
