@@ -2,11 +2,23 @@ import java.util.*;
 
 public class FindPower {
 
+    // public static int calculatePow(int num, int pow) {
+    // if (pow == 0) {
+    // return 1;
+    // }
+    // return num * calculatePow(num, pow - 1);
+    // }
+
     public static int calculatePow(int num, int pow) {
         if (pow == 0) {
             return 1;
         }
-        return num * calculatePow(num, pow - 1);
+        if (pow % 2 == 0) {
+            return calculatePow(num, (pow / 2)) * calculatePow(num, (pow / 2));
+        } else {
+            return num * calculatePow(num, (pow / 2)) * calculatePow(num, (pow / 2));
+        }
+
     }
 
     public static void main(String[] args) {
