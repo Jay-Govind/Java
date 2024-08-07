@@ -9,16 +9,20 @@ public class FindPower {
     // return num * calculatePow(num, pow - 1);
     // }
 
+    // optimized code
     public static int calculatePow(int num, int pow) {
         if (pow == 0) {
             return 1;
         }
-        if (pow % 2 == 0) {
-            return calculatePow(num, (pow / 2)) * calculatePow(num, (pow / 2));
-        } else {
-            return num * calculatePow(num, (pow / 2)) * calculatePow(num, (pow / 2));
+
+        int halfPower = calculatePow(num, (pow / 2));
+        int finalPower = halfPower * halfPower;
+
+        if (pow % 2 != 0) {
+            halfPower = num * halfPower;
         }
 
+        return finalPower;
     }
 
     public static void main(String[] args) {
