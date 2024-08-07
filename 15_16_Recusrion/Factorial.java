@@ -10,7 +10,8 @@ public class Factorial {
         if (num == 0 || num == 1) {
             return 1;
         }
-        return num * factorial(num - 1);
+        int fact = num * factorial(num - 1);
+        return fact;
     }
 
     public static void main(String[] args) {
