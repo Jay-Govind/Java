@@ -160,8 +160,29 @@ public class HelloWorld {
 
  <br>
 
- > ## Day 15  - [Click Me]()
-  Learned about `Recursion` in Java. 
- - 
+ > ## Day 15  - [Click Me](https://github.com/Jay-Govind/java/tree/a9df1aa0b30170033919de236e33f42f7d593f0e/15_16_Recusrion)
+  Learned about `Recursion Part-1` in Java. 
+ - About Recursion
+ - Base Case
+ - Recursion Function
+ - Direction of Recursion
+ - `Some Practice Questions`
+
+ <br>
+  
+ > ## Day 16  - [Click Me](https://github.com/Jay-Govind/java/tree/a9df1aa0b30170033919de236e33f42f7d593f0e/15_16_Recusrion)
+  Learned about `Recursion Part-2` in Java. 
+ - Tiling Problem
+ - Remove Duplicate From String
+ - Friends Pairing Problem
+ - Binary String Problem
+
+ <br>
+  
+ > ## Day 17  - [Click Me](https://github.com/Jay-Govind/java/tree/a9df1aa0b30170033919de236e33f42f7d593f0e/17_DividenConquer)
+  Learned about `Divide & Conquer` in Java. 
+ - `Merge Sort`
+ - `Quick Sort`   
+ - `Sorted & Rotated Array Search`
 
  <br>
