@@ -156,7 +156,19 @@ public class HelloWorld {
 
  > ## Day 14  - [Click Me]()
   Learned about `Object oriented Programming (OOPs)` in Java. 
- - 
+ - Classes & Objects
+ - Access Modifiers
+ - Getters & Setters
+ - Encapsulation
+ - Constructors & its types
+ - Destructors
+ - Inheritance & Its Levels ( `Single`, `Multi`, `Heirarical` & `Hybrid` )
+ - Polymorphism
+ - Method Overloading
+ - Packages in Java
+ - Abstraction & Abstract Classes
+ - Interfaces
+ - `Static` & `Super` Keyboard
 
  <br>
 
