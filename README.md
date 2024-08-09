@@ -195,6 +195,6 @@ public class HelloWorld {
   Learned about `Divide & Conquer` in Java. 
  - `Merge Sort`
  - `Quick Sort`   
- - `Sorted & Rotated Array Search`
+ - `Sorted & Rotated Array Search`- Modified Binary Search
 
  <br>
