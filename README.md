@@ -198,3 +198,15 @@ public class HelloWorld {
  - `Sorted & Rotated Array Search`- Modified Binary Search
 
  <br>
+   
+ > ## Day 18  - [Click Me]()
+  Learned about `Time and Space Complexity` in Java. 
+ - Time Complexity
+ - Space Complexity
+ - Big O Notation
+ - Big Omega Notation
+ - Big Theta Notation
+ - Analysis of Algorithms
+ - How to write an optimized algorithm
+
+ <br>
