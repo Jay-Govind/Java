@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Subset {
     public static void subset(String str, String newStr, int i) {
         if (i == str.length()) {
