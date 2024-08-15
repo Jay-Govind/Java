@@ -213,3 +213,10 @@ public class HelloWorld {
 
  > ## Day 19  - [Click Me]()
   Learned about `Backtracking` in Java.
+  - Types of Backtracking (`Decision Tree`, `Optimization` & `Enumeration`)
+
+  <br>
+
+ > ## Day 20  - [Click Me]()
+  Learned about `Array Lists` in Java.
+  - 
