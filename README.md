@@ -220,3 +220,9 @@ public class HelloWorld {
  > ## Day 20  - [Click Me]()
   Learned about `Array Lists` in Java.
   - 
+    
+  <br>
+
+ > ## Day 21  - [Click Me]()
+  Learned about `Linked List (Part 1)` in Java.
+  - 
