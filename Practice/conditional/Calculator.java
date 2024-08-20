@@ -1,3 +1,5 @@
+package Practice.conditional;
+
 import java.util.*;
 
 public class Calculator {
