@@ -14,7 +14,7 @@ public class ButterflyPattern {
             for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
-            for (int k = 1; k <=2*(lines-i); k++) {
+            for (int k = 1; k <= 2 * (lines - i); k++) {
                 System.out.print("  ");
             }
             for (int j = 1; j <= i; j++) {
@@ -28,7 +28,7 @@ public class ButterflyPattern {
             for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
-            for (int k = 1; k <=2*(lines-i); k++) {
+            for (int k = 1; k <= 2 * (lines - i); k++) {
                 System.out.print("  ");
             }
             for (int j = 1; j <= i; j++) {
