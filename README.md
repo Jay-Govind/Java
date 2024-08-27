@@ -1,4 +1,4 @@
-# Java Learning Repository 🍵
+# Java Learning Repository 🍵🍵
 
 This repository tracks my daily progress in learning Java. It includes daily logs, code snippets, and small projects to improve my Java skills.
 ...
