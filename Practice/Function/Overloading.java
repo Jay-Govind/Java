@@ -16,6 +16,10 @@ public class Overloading {
         return num1 + num2;
     }
 
+    public static float sum(float num1, int num2) {
+        return num1 + num2;
+    }
+
     public static void main(String[] args) {
 
         System.out.println(sum(2, 3));
