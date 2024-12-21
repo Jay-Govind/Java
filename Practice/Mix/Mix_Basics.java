@@ -2,7 +2,7 @@ package Practice.Mix;
 
 import java.util.*;
 
-public class Mix {
+public class Mix_Basics {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
