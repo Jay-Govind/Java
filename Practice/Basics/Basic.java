@@ -23,12 +23,12 @@ public class Basic {
         // boolean val = "0"; // --> String can't be converted into boolean
         // System.out.println(val);
 
-        // int add = 3 + "5"; // --> error
-        // System.out.println();
+        int add = 3 + "5"; // --> error (String cannot be converted to int)
+        System.out.println();
 
-        System.out.print("Enter an integer: ");
-        int a = (new Scanner(System.in).nextInt());
-        System.out.print(a);
+        // System.out.print("Enter an integer: ");
+        // int a = (new Scanner(System.in).nextInt());
+        // System.out.print(a);
 
         sc.close();
     }
