@@ -3,20 +3,6 @@ package Practice.Mix;
 import java.util.Scanner;
 
 public class Mix_Patterns {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        // upperStarPattern(sc);
-        // lowerStarPattern(sc);
-        // invertedUpperStarPattern(sc);
-        // invertedLowerStarPattern(sc);
-        // numberPattern(sc);
-        // invertedNumberPattern(sc);
-        // alphabetPattern(sc);
-        // characterPattern(sc);
-
-        sc.close();
-    }
 
     // *
     // * *
@@ -146,5 +132,36 @@ public class Mix_Patterns {
             }
             System.out.println();
         }
+    }
+
+    // * * * *
+    // * * * *
+    // * * * *
+    // * * * *
+    public static void squarePattern(Scanner sc) {
+        System.out.print("Enter the number of lines : ");
+        int num = sc.nextInt();
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < num; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // upperStarPattern(sc);
+        // lowerStarPattern(sc);
+        // invertedUpperStarPattern(sc);
+        // invertedLowerStarPattern(sc);
+        // numberPattern(sc);
+        // invertedNumberPattern(sc);
+        // alphabetPattern(sc);
+        // characterPattern(sc);
+        squarePattern(sc);
+
+        sc.close();
     }
 }
