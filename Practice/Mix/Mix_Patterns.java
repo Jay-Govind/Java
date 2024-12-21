@@ -10,7 +10,9 @@ public class Mix_Patterns {
         // lowerStarPattern(sc);
         // invertedUpperStarPattern(sc);
         // invertedLowerStarPattern(sc);
-        numberPattern(sc);
+        // numberPattern(sc);
+        // invertedNumberPattern(sc);
+        alphabetPattern(sc);
 
         sc.close();
     }
@@ -91,6 +93,38 @@ public class Mix_Patterns {
         for (int i = 1; i <= num; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // 1 2 3 4
+    // 1 2 3
+    // 1 2
+    // 1
+    public static void invertedNumberPattern(Scanner sc) {
+        System.out.print("Enter the number of line : ");
+        int num = sc.nextInt();
+        for (int i = 0; i < num; i++) {
+            for (int j = 1; j <= num - i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // A
+    // A B
+    // A B C
+    // A B C D
+    public static void alphabetPattern(Scanner sc) {
+        System.out.print("Enter the number of lines: ");
+        int num = sc.nextInt();
+        for (int i = 0; i < num; i++) {
+            char ch = 'A';
+            for ( int j=0; j<=i; j++ ) {
+                System.out.print(ch + " ");
+                ch++;
             }
             System.out.println();
         }
