@@ -177,7 +177,8 @@ public class Mix_Patterns {
         // alphabetPattern(sc);
         // characterPattern(sc);
         // squarePattern(sc);
-        rectanglePattern(sc);
+        // rectanglePattern(sc);
+        
         sc.close();
     }
 }
