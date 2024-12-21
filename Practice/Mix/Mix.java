@@ -6,11 +6,21 @@ public class Mix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        factorial(sc);
+        table(sc);
+        // factorial(sc);
         // leapYear(sc);
         // day(sc);
 
         sc.close();
+    }
+
+    // Table
+    public static void table(Scanner sc) {
+        System.out.print("Enter the number : ");
+        int num = sc.nextInt();
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num + " x " + i + " = " + (num * i));
+        }
     }
 
     // Factorial
