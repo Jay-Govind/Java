@@ -149,6 +149,22 @@ public class Mix_Patterns {
         }
     }
 
+    // * * * * *
+    // * * * * *
+    // * * * * *
+    public static void rectanglePattern(Scanner sc) {
+        System.out.print("Enter the number of lines : ");
+        int num = sc.nextInt();
+        System.out.print("Enter the number of columns : ");
+        int col = sc.nextInt();
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -160,8 +176,8 @@ public class Mix_Patterns {
         // invertedNumberPattern(sc);
         // alphabetPattern(sc);
         // characterPattern(sc);
-        squarePattern(sc);
-
+        // squarePattern(sc);
+        rectanglePattern(sc);
         sc.close();
     }
 }
