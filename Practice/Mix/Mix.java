@@ -6,12 +6,27 @@ public class Mix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        table(sc);
+        reverse(sc);
+        // table(sc);
         // factorial(sc);
         // leapYear(sc);
         // day(sc);
 
         sc.close();
+    }
+
+    // Reverse
+    public static void reverse(Scanner sc) {
+        System.out.print(" Enter a number : ");
+        int num = sc.nextInt();
+
+        int reverse = 0;
+        while (num > 0) {
+            int last_digit = num % 10;
+            reverse = (reverse * 10) + last_digit;
+            num /= 10;
+        }
+        System.out.println("The reverse of the number is " + reverse);
     }
 
     // Table
