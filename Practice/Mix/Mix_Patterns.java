@@ -12,7 +12,8 @@ public class Mix_Patterns {
         // invertedLowerStarPattern(sc);
         // numberPattern(sc);
         // invertedNumberPattern(sc);
-        alphabetPattern(sc);
+        // alphabetPattern(sc);
+        // characterPattern(sc);
 
         sc.close();
     }
@@ -122,7 +123,24 @@ public class Mix_Patterns {
         int num = sc.nextInt();
         for (int i = 0; i < num; i++) {
             char ch = 'A';
-            for ( int j=0; j<=i; j++ ) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print(ch + " ");
+                ch++;
+            }
+            System.out.println();
+        }
+    }
+
+    // A
+    // B C
+    // D E F
+    // G H I J
+    public static void characterPattern(Scanner sc) {
+        System.out.print("Enter the number of lines : ");
+        int num = sc.nextInt();
+        char ch = 'A';
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j <= i; j++) {
                 System.out.print(ch + " ");
                 ch++;
             }
