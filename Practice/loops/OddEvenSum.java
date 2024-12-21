@@ -25,8 +25,8 @@ public class OddEvenSum {
             choice = sc.nextInt();
         } while (choice == 1);
 
-        System.err.println("Sum of even numbers : " + evenSum);
-        System.err.println("Sum of odd numbers : " + oddSum);
+        System.out.println("Sum of even numbers : " + evenSum);
+        System.out.println("Sum of odd numbers : " + oddSum);
         sc.close();
     }
 }
