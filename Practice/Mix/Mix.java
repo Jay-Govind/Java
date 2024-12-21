@@ -6,14 +6,29 @@ public class Mix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the day number :");
-        int day_num = sc.nextInt();
-        day(day_num);
+        leapYear(sc);
+        day(sc);
 
         sc.close();
     }
 
-    public static void day(int day) {
+    // Leap year
+    public static void leapYear(Scanner sc) {
+        System.out.print("Enter the year : ");
+        int year = sc.nextInt();
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            System.out.println(year + " is a leap year");
+        } else {
+            System.out.println(year + " is not a leap year");
+        }
+
+    }
+
+    // Day of the Week
+    public static void day(Scanner sc) {
+
+        System.out.print("Enter the day number :");
+        int day = sc.nextInt();
         switch (day) {
             case 1:
                 System.out.println("The day is 'Sunday'");
