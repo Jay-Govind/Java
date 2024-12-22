@@ -168,6 +168,26 @@ public class Mix_Patterns {
         }
     }
 
+    // * * * *
+    // * - - *
+    // * * * *
+    public static void hollowRectanglePattern(Scanner sc) {
+        System.out.print("Enter the number of rows : ");
+        int rows = sc.nextInt();
+        System.out.print("Enter the number of columns : ");
+        int cols = sc.nextInt();
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (i == 0 || i == rows - 1 || j == 0 || j == cols - 1) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
     // * * * * *
     // * * * * *
     // * * * * *
@@ -196,8 +216,9 @@ public class Mix_Patterns {
         // alphabetPattern(sc);
         // characterPattern(sc);
         // squarePattern(sc);
-        hollowSquarePattern(sc);
+        // hollowSquarePattern(sc);
         // rectanglePattern(sc);
+        hollowRectanglePattern(sc);
 
         sc.close();
     }
