@@ -149,6 +149,25 @@ public class Mix_Patterns {
         }
     }
 
+    // * * * *
+    // * - - *
+    // * - - *
+    // * * * *
+    public static void hollowSquarePattern(Scanner sc) {
+        System.out.print("Enter the number of lines : ");
+        int num = sc.nextInt();
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < num; j++) {
+                if (i == 0 || i == num - 1 || j == 0 || j == num - 1) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
     // * * * * *
     // * * * * *
     // * * * * *
@@ -177,8 +196,9 @@ public class Mix_Patterns {
         // alphabetPattern(sc);
         // characterPattern(sc);
         // squarePattern(sc);
+        hollowSquarePattern(sc);
         // rectanglePattern(sc);
-        
+
         sc.close();
     }
 }
