@@ -34,9 +34,9 @@ public class Mix_Patterns {
         }
     }
 
-    // - - - *
-    // - - * *
-    // - * * *
+    // . . . *
+    // . . * *
+    // . * * *
     // * * * *
     public static void invertedUpperStarPattern(Scanner sc) {
         System.out.print("Enter the number of lines: ");
@@ -53,9 +53,9 @@ public class Mix_Patterns {
     }
 
     // * * * *
-    // - * * *
-    // - - * *
-    // - - - *
+    // . * * *
+    // . . * *
+    // . . . *
     public static void invertedLowerStarPattern(Scanner sc) {
         System.out.print("Enter the number of lines: ");
         int num = sc.nextInt();
@@ -150,8 +150,8 @@ public class Mix_Patterns {
     }
 
     // * * * *
-    // * - - *
-    // * - - *
+    // * . . *
+    // * . . *
     // * * * *
     public static void hollowSquarePattern(Scanner sc) {
         System.out.print("Enter the number of lines : ");
@@ -185,7 +185,7 @@ public class Mix_Patterns {
     }
 
     // * * * *
-    // * - - *
+    // * . . *
     // * * * *
     public static void hollowRectanglePattern(Scanner sc) {
         System.out.print("Enter the number of rows : ");
@@ -242,6 +242,35 @@ public class Mix_Patterns {
         }
     }
 
+    // . . . . * * * * *
+    // . . . * * * * *
+    // . . * * * * *
+    // . * * * * *
+    // * * * * *
+    public static void solidRhombusPattern(Scanner sc) {
+        System.out.print("Enter the number of lines : ");
+        int num = sc.nextInt();
+        for (int i = 0; i < num; i++) {
+            for (int j = 1; j < num - i; j++) {
+                System.out.print("  ");
+            }
+            for (int k = 0; k < num; k++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    // . . . . *
+    // . . . * * *
+    // . . * * * * *
+    // . * * * * * * *
+    // * * * * * * * * *
+    // . * * * * * * *
+    // . . * * * * *
+    // . . . * * *
+    // . . . . *
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -259,6 +288,7 @@ public class Mix_Patterns {
         // hollowRectanglePattern(sc);
         // zeroOneTrianglePattern(sc);
         // floydTrianglePattern(sc);
+        solidRhombusPattern(sc);
 
         sc.close();
     }
