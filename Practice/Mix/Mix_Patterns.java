@@ -261,6 +261,15 @@ public class Mix_Patterns {
         }
     }
 
+    // . . . . * * * * *
+    // . . . * . . . *
+    // . . * . . . *
+    // . * . . . *
+    // * * * * *
+    public static void hollowRhombusPattern(Scanner sc) {
+
+    }
+
     // . . . . *
     // . . . * * *
     // . . * * * * *
@@ -315,7 +324,8 @@ public class Mix_Patterns {
         // zeroOneTrianglePattern(sc);
         // floydTrianglePattern(sc);
         // solidRhombusPattern(sc);
-        diamondPattern(sc);
+        hollowRhombusPattern(sc);
+        // diamondPattern(sc);
 
         sc.close();
     }
