@@ -168,6 +168,22 @@ public class Mix_Patterns {
         }
     }
 
+    // * * * * *
+    // * * * * *
+    // * * * * *
+    public static void rectanglePattern(Scanner sc) {
+        System.out.print("Enter the number of lines : ");
+        int num = sc.nextInt();
+        System.out.print("Enter the number of columns : ");
+        int col = sc.nextInt();
+        for (int i = 0; i < num; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
     // * * * *
     // * - - *
     // * * * *
@@ -188,17 +204,21 @@ public class Mix_Patterns {
         }
     }
 
-    // * * * * *
-    // * * * * *
-    // * * * * *
-    public static void rectanglePattern(Scanner sc) {
+    // 1
+    // 0 1
+    // 1 0 1
+    // 0 1 0 1
+    // 1 0 1 0 1
+    public static void zeroOneTrianglePattern(Scanner sc) {
         System.out.print("Enter the number of lines : ");
         int num = sc.nextInt();
-        System.out.print("Enter the number of columns : ");
-        int col = sc.nextInt();
         for (int i = 0; i < num; i++) {
-            for (int j = 0; j < col; j++) {
-                System.out.print("* ");
+            for (int j = 0; j <= i; j++) {
+                if ((i + j) % 2 == 0) {
+                    System.out.print("1 ");
+                } else {
+                    System.out.print("0 ");
+                }
             }
             System.out.println();
         }
@@ -218,7 +238,8 @@ public class Mix_Patterns {
         // squarePattern(sc);
         // hollowSquarePattern(sc);
         // rectanglePattern(sc);
-        hollowRectanglePattern(sc);
+        // hollowRectanglePattern(sc);
+        zeroOneTrianglePattern(sc);
 
         sc.close();
     }
