@@ -267,7 +267,21 @@ public class Mix_Patterns {
     // . * . . . *
     // * * * * *
     public static void hollowRhombusPattern(Scanner sc) {
-
+        System.out.print("Ente the number 0f lines : ");
+        int num = sc.nextInt();
+        for (int i = 0; i < num; i++) {
+            for (int j = 1; j < num - i; j++) {
+                System.out.print("  ");
+            }
+            for (int k = 0; k < num; k++) {
+                if (i == 0 || i == num - 1 || k == 0 || k == num - 1) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
     }
 
     // . . . . *
@@ -305,6 +319,17 @@ public class Mix_Patterns {
             System.out.println();
         }
     }
+
+    // Butterfly pattern
+    // * *
+    // * * * *
+    // * * * * * *
+    // * * * * * * * *
+    // * * * * * * * * *
+    // * * * * * * * *
+    // * * * * * *
+    // * * * *
+    // * *
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
