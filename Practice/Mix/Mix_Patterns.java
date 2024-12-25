@@ -378,10 +378,7 @@ public class Mix_Patterns {
                 System.out.print("  ");
             }
             for (int k = 1; k <= i; k++) {
-                System.out.print(i + " ");
-                if (k < i) {
-                    System.out.print("  ");
-                }
+                System.out.print(i + "   ");
             }
             System.out.println();
         }
@@ -431,7 +428,7 @@ public class Mix_Patterns {
         // hollowRhombusPattern(sc);
         // diamondPattern(sc);
         // butterflyPattern(sc);
-        numberPyramidPattern(sc);
+        // numberPyramidPattern(sc);
         // palindromePattern(sc);
 
         sc.close();
