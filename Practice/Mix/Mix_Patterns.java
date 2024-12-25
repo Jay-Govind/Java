@@ -364,6 +364,48 @@ public class Mix_Patterns {
         }
     }
 
+    // . . . . 1
+    // . . . 2 . 2
+    // . . 3 . 3 . 3
+    // . 4 . 4 . 4 . 4
+    // 5 . 5 . 5 . 5 . 5
+    public static void numberPyramidPattern(Scanner sc) {
+        System.out.print("Enter the number of lines : ");
+        int num = sc.nextInt();
+
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= num - i; j++) {
+                System.out.print("  ");
+            }
+            for (int k = 1; k <= i; k++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // . . . . 1
+    // . . . 2 1 2
+    // . . 3 2 1 2 3
+    // . 4 3 2 1 2 3 4
+    // 5 4 3 2 1 2 3 4 5
+    public static void palindromePattern(Scanner sc) {
+        System.out.print("Enter the number of lines : ");
+        int num = sc.nextInt();
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= num - i; j++) {
+                System.out.print("  ");
+            }
+            for (int k = i; k >= 1; k--) {
+                System.out.print(k + " ");
+            }
+            for (int l = 2; l <= i; l++) {
+                System.out.print(l + " ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -385,6 +427,8 @@ public class Mix_Patterns {
         // hollowRhombusPattern(sc);
         // diamondPattern(sc);
         // butterflyPattern(sc);
+        numberPyramidPattern(sc);
+        // palindromePattern(sc);
 
         sc.close();
     }
