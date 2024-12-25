@@ -379,9 +379,13 @@ public class Mix_Patterns {
             }
             for (int k = 1; k <= i; k++) {
                 System.out.print(i + " ");
+                if (k < i) {
+                    System.out.print("  ");
+                }
             }
             System.out.println();
         }
+
     }
 
     // . . . . 1
