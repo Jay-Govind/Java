@@ -99,12 +99,28 @@ public class Functions {
         }
     }
 
+    public static void binaryToDecimal(Scanner sc) {
+        System.out.print("Enter a binary number: ");
+        long binary = sc.nextLong();
+        long temp = binary;
+        long decimal = 0;
+        int power = 0;
+        while (temp != 0) {
+            long remainder = temp % 10;
+            decimal += (remainder * (long) Math.pow(2, power));
+            power++;
+            temp /= 10;
+        }
+        System.out.println("Decimal equivalent of " + binary + " is " + decimal);
+    }
+
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
         // factorial(sc);
         // binomialCoefficient(sc);
         // primeOrComposite(sc);
+        binaryToDecimal(sc);
 
         sc.close();
     }
