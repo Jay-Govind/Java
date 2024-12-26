@@ -22,6 +22,7 @@ public class Functions {
         } while (num < 0);
     }
 
+    // helper function for binomialCoefficient
     public static long factorialofGivenNumber(int num) {
         long fact = 1;
         if (num == 0 || num == 1) {
@@ -55,11 +56,56 @@ public class Functions {
 
     }
 
+    public static void primeOrComposite(Scanner sc) {
+        int num;
+        do {
+            System.out.print("Enter a number: ");
+            num = sc.nextInt();
+            if (num <= 0) {
+                System.out.println("Please enter a positive number (greater than 0)");
+            }
+        } while (num <= 0);
+
+        if (num == 1) {
+            System.out.println(num + " is neither prime nor composite");
+            return;
+        }
+
+        // If the number is 2, it is prime
+        if (num == 2) {
+            System.out.println(num + " is a prime number");
+            return;
+        }
+
+        // If the number is even and not 2, it is composite
+        if (num % 2 == 0) {
+            System.out.println(num + " is a composite number");
+            return;
+        }
+
+        // Check divisibility for odd numbers from 3 to sqrt(num)
+        boolean isPrime = true;
+        for (int i = 3; i <= Math.sqrt(num); i += 2) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            System.out.println(num + " is a prime number");
+        } else {
+            System.out.println(num + " is a composite number");
+        }
+    }
+
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
         // factorial(sc);
-        binomialCoefficient(sc);
+        // binomialCoefficient(sc);
+        // primeOrComposite(sc);
+
         sc.close();
     }
 }
