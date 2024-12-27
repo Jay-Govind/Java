@@ -79,12 +79,32 @@ public class Arrays {
         System.out.println("Largest element in an array is : " + max);
     }
 
+    // smallest element in an array
+    public static void smallestElement(Scanner sc) {
+        System.out.print("Enter the size of an array : ");
+        int size = sc.nextInt();
+
+        int arr[] = new int[size];
+        inputArr(arr, sc);
+
+        int min = Integer.MAX_VALUE;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+
+        System.out.println("Smallest element in an array is : " + min);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         // linearSearch(sc);
         // binarySearch(sc);
-        largestElement(sc);
+        // largestElement(sc);
+        smallestElement(sc);
 
         sc.close();
     }
