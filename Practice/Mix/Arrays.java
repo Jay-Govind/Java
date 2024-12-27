@@ -210,6 +210,35 @@ public class Arrays {
         System.out.println("Maximum subarray sum : " + maxSum);
     }
 
+    // maximum subarray sum (prefix sum) -> O(n) time complexity
+    public static void maxSubArraySum2(Scanner sc) {
+        System.out.print("Enter the size of an array : ");
+        int size = sc.nextInt();
+
+        int arr[] = new int[size];
+        inputArr(arr, sc);
+
+        int currSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+
+        int prefixSum[] = new int[size];
+        prefixSum[0] = arr[0];
+
+        // prefix sum array
+        for (int i = 1; i < arr.length; i++) {
+            prefixSum[i] = prefixSum[i - 1] + arr[i];
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length; j++) {
+                currSum = 0;
+                currSum = ((i == 0) ? prefixSum[j] : prefixSum[j] - prefixSum[i - 1]);
+                maxSum = Math.max(maxSum, currSum);
+            }
+        }
+        System.out.println("Maximum subarray sum : " + maxSum);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -220,7 +249,9 @@ public class Arrays {
         // reverseArray(sc);
         // arrayPairs(sc);
         // subArrays(sc);
-        maxSubArraySum(sc);
+        // maxSubArraySum(sc); // brute force
+        // maxSubArraySum2(sc); // prefix sum
+        maxSubArraySum3(sc); // kadane's algorithm
 
         sc.close();
     }
