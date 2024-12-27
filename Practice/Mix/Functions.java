@@ -114,14 +114,29 @@ public class Functions {
         System.out.println("Decimal equivalent of " + binary + " is " + decimal);
     }
 
+    public static void decimalToBinary(Scanner sc) {
+        System.out.print("Enter a decimal number: ");
+        int num = sc.nextInt();
+        int temp = num;
+        long binary = 0;
+        int power = 0;
+        while (temp != 0) {
+            int remainder = temp % 2;
+            binary += (remainder * (long) Math.pow(10, power));
+            power++;
+            temp /= 2;
+        }
+        System.out.println("Binary equivalent of " + num + " is " + binary);
+    }
+
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
         // factorial(sc);
         // binomialCoefficient(sc);
         // primeOrComposite(sc);
-        binaryToDecimal(sc);
-
+        // binaryToDecimal(sc);
+        decimalToBinary(sc);
         sc.close();
     }
 }
