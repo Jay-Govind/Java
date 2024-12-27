@@ -119,13 +119,35 @@ public class Arrays {
         System.out.println("Smallest element in an array is : " + min);
     }
 
+    // reverse an array
+    public static void reverseArray(Scanner sc) {
+        System.out.print("Enter the size of an array : ");
+        int size = sc.nextInt();
+
+        int arr[] = new int[size];
+        inputArr(arr, sc);
+
+        System.out.print("Original array : ");
+        printArr(arr);
+
+        for (int i = 0; i < arr.length / 2; i++) {
+            int temp = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = temp;
+        }
+
+        System.out.print("\nReversed array : ");
+        printArr(arr);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         // linearSearch(sc);
-        binarySearch(sc);
+        // binarySearch(sc);
         // largestElement(sc);
         // smallestElement(sc);
+        reverseArray(sc);
 
         sc.close();
     }
