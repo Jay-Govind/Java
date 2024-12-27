@@ -239,6 +239,28 @@ public class Arrays {
         System.out.println("Maximum subarray sum : " + maxSum);
     }
 
+    // maximum subarray sum (kadane's algorithm) -> O(n) time complexity
+    public static void maxSubArraySum3(Scanner sc) {
+        System.out.print("Enter the size of an array : ");
+        int size = sc.nextInt();
+
+        int arr[] = new int[size];
+        inputArr(arr, sc);
+
+        int currSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+
+        // kadane's algorithm
+        for (int i = 0; i < arr.length; i++) {
+            currSum += arr[i];
+            if (currSum < 0) {
+                currSum = 0;
+            }
+            maxSum = Math.max(maxSum, currSum);
+        }
+        System.out.println("Maximum subarray sum : " + maxSum);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
