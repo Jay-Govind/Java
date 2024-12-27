@@ -186,6 +186,30 @@ public class Arrays {
         }
     }
 
+    // maximum subarray sum (brute force) -> O(n^3) time complexity
+    public static void maxSubArraySum(Scanner sc) {
+        System.out.print("Enter the size of an array : ");
+        int size = sc.nextInt();
+
+        int arr[] = new int[size];
+        inputArr(arr, sc);
+
+        int currSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+
+        // subarrays sum
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i; j < arr.length; j++) {
+                currSum = 0;
+                for (int k = i; k <= j; k++) {
+                    currSum += arr[k];
+                }
+                maxSum = Math.max(maxSum, currSum);
+            }
+        }
+        System.out.println("Maximum subarray sum : " + maxSum);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -196,6 +220,7 @@ public class Arrays {
         // reverseArray(sc);
         // arrayPairs(sc);
         // subArrays(sc);
+        maxSubArraySum(sc);
 
         sc.close();
     }
