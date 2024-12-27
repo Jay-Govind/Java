@@ -47,13 +47,44 @@ public class Arrays {
     }
 
     // binary search
-    
+    public static void binarySearch(Scanner sc) {
+        System.out.print("Enter the size of an array : ");
+        int size = sc.nextInt();
+
+        int arr[] = new int[size];
+        inputArr(arr, sc);
+
+        System.out.print("Enter the element to search : ");
+        int search = sc.nextInt();
+
+        int index = -1;
+    }
+
+    // largest element in an array
+    public static void largestElement(Scanner sc) {
+        System.out.print("Enter the size of an array : ");
+        int size = sc.nextInt();
+
+        int arr[] = new int[size];
+        inputArr(arr, sc);
+
+        int max = Integer.MIN_VALUE;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+
+        System.out.println("Largest element in an array is : " + max);
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         // linearSearch(sc);
-        binarySearch(sc);
+        // binarySearch(sc);
+        largestElement(sc);
 
         sc.close();
     }
