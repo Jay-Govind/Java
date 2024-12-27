@@ -142,6 +142,23 @@ public class Functions {
         System.out.println("Sum of digits of " + num + " is " + sum);
     }
 
+    public static void palindrome(Scanner sc) {
+        System.out.print("Enter a number : ");
+        int num = sc.nextInt();
+        int temp = num;
+        int reverse = 0;
+        while (temp != 0) {
+            int remainder = temp % 10;
+            reverse = (reverse * 10) + remainder;
+            temp /= 10;
+        }
+        if (num == reverse) {
+            System.out.println(num + " is a palindrome number");
+        } else {
+            System.out.println(num + " is not a palindrome number");
+        }
+    }
+
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
@@ -151,6 +168,8 @@ public class Functions {
         // binaryToDecimal(sc);
         // decimalToBinary(sc);
         // sumOfDigits(sc);
+        palindrome(sc);
+
         sc.close();
     }
 }
