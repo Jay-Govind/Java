@@ -258,6 +258,15 @@ public class Arrays {
             }
             maxSum = Math.max(maxSum, currSum);
         }
+
+        // edge case --> if all elements are negative
+        if (maxSum == 0) {
+            maxSum = arr[0];
+            for (int i = 0; i < arr.length; i++) {
+                maxSum = Math.max(maxSum, arr[i]);
+            }
+        }
+
         System.out.println("Maximum subarray sum : " + maxSum);
     }
 
