@@ -58,6 +58,27 @@ public class Arrays {
         int search = sc.nextInt();
 
         int index = -1;
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (arr[mid] == search) {
+                index = mid;
+                break;
+            } else if (arr[mid] < search) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+
+        if (index != -1) {
+            System.out.println("Element found at index " + index);
+        } else {
+            System.out.println("Element not found");
+        }
     }
 
     // largest element in an array
@@ -102,9 +123,9 @@ public class Arrays {
         Scanner sc = new Scanner(System.in);
 
         // linearSearch(sc);
-        // binarySearch(sc);
+        binarySearch(sc);
         // largestElement(sc);
-        smallestElement(sc);
+        // smallestElement(sc);
 
         sc.close();
     }
