@@ -270,6 +270,31 @@ public class Arrays {
         System.out.println("Maximum subarray sum : " + maxSum);
     }
 
+    // stock profit
+    public static void stockProfit(Scanner sc) {
+        System.out.print("Enter the size of an array : ");
+        int size = sc.nextInt();
+
+        int prices[] = new int[size];
+        inputArr(prices, sc);
+
+        int buyPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+
+        for (int i = 0; i < prices.length; i++) {
+            if (buyPrice < prices[i]) {
+                // sell stock
+                int profit = prices[i] - buyPrice;
+                maxProfit = Math.max(profit, maxProfit);
+            } else {
+                // buy stock
+                buyPrice = prices[i];
+            }
+        }
+
+        System.out.println("Maximum profit : " + maxProfit);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -282,7 +307,9 @@ public class Arrays {
         // subArrays(sc);
         // maxSubArraySum(sc); // brute force
         // maxSubArraySum2(sc); // prefix sum
-        maxSubArraySum3(sc); // kadane's algorithm
+        // maxSubArraySum3(sc); // kadane's algorithm
+        trappingRainWater(sc);
+        // stockProfit(sc);
 
         sc.close();
     }
