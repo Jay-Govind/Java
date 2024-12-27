@@ -129,6 +129,19 @@ public class Functions {
         System.out.println("Binary equivalent of " + num + " is " + binary);
     }
 
+    public static void sumOfDigits(Scanner sc) {
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int temp = num;
+        int sum = 0;
+        while (temp != 0) {
+            int remainder = temp % 10;
+            sum += remainder;
+            temp /= 10;
+        }
+        System.out.println("Sum of digits of " + num + " is " + sum);
+    }
+
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 
@@ -136,7 +149,8 @@ public class Functions {
         // binomialCoefficient(sc);
         // primeOrComposite(sc);
         // binaryToDecimal(sc);
-        decimalToBinary(sc);
+        // decimalToBinary(sc);
+        // sumOfDigits(sc);
         sc.close();
     }
 }
