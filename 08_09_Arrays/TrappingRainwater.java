@@ -55,6 +55,26 @@ public class TrappingRainwater {
         return totalWater;
     }
 
+    public static int trappingRainwater2(int height[]) {
+        // two pointer approach
+        int leftIndex = 0, rightIndex = height.length - 1, trappedWater = 0;
+        int leftMax = height[leftIndex], rightMax = height[rightIndex];
+
+        while (leftIndex < rightIndex) {
+            if (leftMax < rightMax) {
+                leftIndex++;
+                leftMax = Math.max(height[leftIndex], leftMax);
+                trappedWater += (leftMax - height[leftIndex]) * 1;
+            } else {
+                rightIndex--;
+                rightMax = Math.max(height[rightIndex], rightMax);
+                trappedWater += (rightMax - height[rightIndex]) * 1;
+            }
+        }
+
+        return trappedWater;
+    }
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -70,7 +90,7 @@ public class TrappingRainwater {
             height[count] = sc.nextInt();
         }
 
-        System.out.println(trappingRainwater(height));
+        System.out.println(trappingRainwater2(height));
 
         sc.close();
     }
