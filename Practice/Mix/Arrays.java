@@ -232,6 +232,7 @@ public class Arrays {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j < arr.length; j++) {
                 currSum = 0;
+                // currSum = prefixSum[end] - prefixSum[start - 1];
                 currSum = ((i == 0) ? prefixSum[j] : prefixSum[j] - prefixSum[i - 1]);
                 maxSum = Math.max(maxSum, currSum);
             }
@@ -268,6 +269,51 @@ public class Arrays {
         }
 
         System.out.println("Maximum subarray sum : " + maxSum);
+    }
+
+    // trapping rain water --> O(n) time complexity
+    public static void trappingRainWater(Scanner sc) {
+        System.out.print("Enter the size of an array : ");
+        int size = sc.nextInt();
+
+        int height[] = new int[size];
+        inputArr(height, sc);
+
+        if (size < 0) {
+            return;
+        }
+
+        // Calculate leftMax boundary - array
+        int leftMax[] = new int[size];
+        leftMax[0] = height[0];
+
+        for (int i = 1; i < size; i++) {
+            leftMax[i] = Math.max(leftMax[i - 1], height[i]);
+        }
+
+        // calculate rightMax boundary - array
+        int rightMax[] = new int[size];
+        rightMax[size - 1] = height[size - 1];
+
+        for (int i = size - 2; i >= 0; i--) {
+            rightMax[i] = Math.max(rightMax[i + 1], height[i]);
+        }
+
+        // calculate trapped water
+        int trappedWater = 0;
+        int i = 0;
+        while (i < size) {
+
+            // waterLevel = min(leftMax, rightMax)
+            int currWaterLevel = Math.min(leftMax[i], rightMax[i]);
+
+            // calculate volume of water - {( currWaterLevel - height[i] ) * width}
+            trappedWater += (currWaterLevel - height[i]) * 1;
+
+            i++;
+        }
+
+        System.out.println("Trapped water : " + trappedWater);
     }
 
     // stock profit
@@ -308,7 +354,7 @@ public class Arrays {
         // maxSubArraySum(sc); // brute force
         // maxSubArraySum2(sc); // prefix sum
         // maxSubArraySum3(sc); // kadane's algorithm
-        trappingRainWater(sc);
+        // trappingRainWater(sc);
         // stockProfit(sc);
 
         sc.close();
