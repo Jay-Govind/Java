@@ -27,9 +27,40 @@ public class Sorting {
 
     // Selection Sort
     public static void selectionSort(int[] arr) {
-
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
+            int minPos = i;
+            for (int j = (i + 1); j < n; j++) {
+                if (arr[j] < arr[minPos]) {
+                    minPos = j;
+                }
+            }
+            // swap
+            int temp = arr[i];
+            arr[i] = arr[minPos];
+            arr[minPos] = temp;
+        }
     }
 
+    // Insertion Sort
+    public static void insertionSort(int[] arr) {
+        int n = arr.length;
+        for (int i = 1; i < n; i++) {
+            int curr = arr[i];
+            int prev = i - 1;
+            
+            // find the correct position of the current element
+            while (prev >= 0 && arr[prev] > curr) {
+                arr[prev + 1] = arr[prev];
+                prev--;
+            }
+
+            // insert the current element at the correct position
+            arr[prev + 1] = curr;
+        }
+    }
+
+    // Print Array - (Auxiliary Function)
     public static void printArr(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
@@ -50,7 +81,8 @@ public class Sorting {
         }
 
         // bubbleSort(arr);
-        selectionSort(arr);
+        // selectionSort(arr);
+        insertionSort(arr);
 
         printArr(arr);
 
