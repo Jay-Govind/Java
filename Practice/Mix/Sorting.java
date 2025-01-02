@@ -112,6 +112,23 @@ public class Sorting {
         }
     }
 
+    // Selection Sort (Decreasing Order)
+    public static void selectionSort2(int[] arr) {
+        int n = arr.length - 1;
+        for (int i = 0; i < n - 1; i++) {
+            int maxPos = i;
+            for (int j = (i + 1); j < n; j++) {
+                if (arr[j] > arr[maxPos]) {
+                    maxPos = j;
+                }
+            }
+            // swap
+            int temp = arr[i];
+            arr[i] = arr[maxPos];
+            arr[maxPos] = temp;
+        }
+    }
+
     public static void main(String[] args) {
         int[] arr = { 3, 6, 2, 1, 8, 7, 4, 5, 3, 1 };
 
@@ -122,8 +139,8 @@ public class Sorting {
         // countingSort(arr);
 
         // -----Decreasing Order-----
-        bubbleSort2(arr);
-        // selectionSort2(arr);
+        // bubbleSort2(arr);
+        selectionSort2(arr);
         // insertionSort2(arr);
         // countingSort2(arr);
 
