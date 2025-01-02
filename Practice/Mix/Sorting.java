@@ -48,7 +48,7 @@ public class Sorting {
         for (int i = 1; i < n; i++) {
             int curr = arr[i];
             int prev = i - 1;
-            
+
             // find the correct position of the current element
             while (prev >= 0 && arr[prev] > curr) {
                 arr[prev + 1] = arr[prev];
@@ -57,6 +57,31 @@ public class Sorting {
 
             // insert the current element at the correct position
             arr[prev + 1] = curr;
+        }
+    }
+
+    // Counting Sort
+    public static void countingSort(int[] arr) {
+        int n = arr.length;
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            max = Math.max(max, arr[i]);
+        }
+
+        // store the frequency
+        int[] count = new int[max + 1];
+        for (int i = 0; i < n; i++) {
+            count[arr[i]]++;
+        }
+
+        // sorting
+        int j = 0;
+        for (int i = 0; i < count.length; i++) {
+            while (count[i] > 0) {
+                arr[j] = i;
+                count[i]--;
+                j++;
+            }
         }
     }
 
@@ -82,7 +107,8 @@ public class Sorting {
 
         // bubbleSort(arr);
         // selectionSort(arr);
-        insertionSort(arr);
+        // insertionSort(arr);
+        countingSort(arr);
 
         printArr(arr);
 
