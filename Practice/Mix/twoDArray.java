@@ -62,7 +62,7 @@ public class twoDArray {
                 }
                 System.out.print(matrix[endRow][j] + " ");
             }
-            
+
             // print startCol
             for (int i = (endRow - 1); i >= startRow + 1; i--) {
                 if (startCol == endCol) {
@@ -78,18 +78,54 @@ public class twoDArray {
         }
     }
 
+    // Diagonal Sum Matrix (only for square matrix)
+    public static void diagonalSumMatrix(int[][] matrix) {
+        int n = matrix.length;
+        int sum = 0;
+
+        for (int i = 0; i < n; i++) {
+            // sum of the main diagonal
+            sum += matrix[i][i];
+            // sum of the anti-diagonal
+            if (i != n - i - 1) {
+                sum += matrix[i][n - i - 1];
+            }
+        }
+        System.out.print("The sum of the diagonal elements is " + sum);
+    }
+
+    // Search in a sorted matrix
+    public static int[] searchInSortedMatrix(int[][] matrix, int target) {
+        int rows = matrix.length - 1;
+        int cols = matrix[0].length;
+
+        int i = 0;
+        int j = cols - 1;
+
+        while (i < rows && j >= 0) {
+            if (matrix[i][j] == target) {
+                return new int[] { i, j };
+            } else if (matrix[i][j] > target) {
+                j--;
+            } else {
+                i++;
+            }
+        }
+        return new int[] { -1, -1 };
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the number of rows: ");
-        int rows = sc.nextInt();
-        System.out.print("Enter the number of columns: ");
-        int cols = sc.nextInt();
+        // System.out.print("Enter the number of rows: ");
+        // int rows = sc.nextInt();
+        // System.out.print("Enter the number of columns: ");
+        // int cols = sc.nextInt();
 
-        int[][] matrix = new int[rows][cols];
+        // int[][] matrix = new int[rows][cols];
 
-        inputArr(matrix, rows, cols, sc);
-        printArr(matrix, rows, cols);
+        // inputArr(matrix, rows, cols, sc);
+        // printArr(matrix, rows, cols);
 
         // Search in a matrix
         // System.out.print("Enter the element to search: ");
@@ -102,8 +138,22 @@ public class twoDArray {
         // System.out.println("Element not found");
         // }
 
-        // Spiral Matrix
-        spiralMatrix(matrix);
+        // spiralMatrix(matrix);
+        // diagonalSumMatrix(matrix);
+
+        
+        int[][] matrix = { { 10, 20, 30, 40 },
+                { 15, 25, 35, 45 },
+                { 27, 29, 37, 48 },
+                { 32, 33, 39, 50 } };
+        int target = 29;
+        int[] result = searchInSortedMatrix(matrix, target);
+        if (result[0] != -1 && result[1] != -1) {
+            System.out.println("Element found at position (" + (result[0] + 1) + ", " +
+                    (result[1] + 1) + ")");
+        } else {
+            System.out.println("Element not found");
+        }
         sc.close();
     }
 }
