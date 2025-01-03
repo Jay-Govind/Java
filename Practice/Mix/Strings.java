@@ -11,14 +11,33 @@ public class Strings {
 
         while (i < j) {
             if (str.charAt(i) != str.charAt(j)) {
-                System.out.println(str + " is not a palindrome");
                 return false;
             }
             i++;
             j--;
         }
-        System.out.println(str + " is a palindrome");
         return true;
+    }
+
+    // Function to find the shortest path to reach the destination
+    public static float shortestPath(String path) {
+        int x = 0, y = 0;
+
+        for (int i = 0; i < path.length(); i++) {
+            if (path.charAt(i) == 'N' || path.charAt(i) == 'n') {
+                y++;
+            } else if (path.charAt(i) == 'S' || path.charAt(i) == 's') {
+                y--;
+            } else if (path.charAt(i) == 'E' || path.charAt(i) == 'e') {
+                x++;
+            } else if (path.charAt(i) == 'W' || path.charAt(i) == 'w') {
+                x--;
+            }
+        }
+
+        float dis = (float) Math.sqrt(x * x + y * y);
+        return dis;
+
     }
 
     public static void main(String[] args) {
@@ -27,8 +46,8 @@ public class Strings {
         System.out.print("Enter a string: ");
         String str = sc.nextLine();
 
-        // isPalindrome(str);
-        // shortestPath(str);
+        // system.out.println(isPalindrome(str));
+        // System.out.println(shortestPath(str));
         sc.close();
     }
 }
