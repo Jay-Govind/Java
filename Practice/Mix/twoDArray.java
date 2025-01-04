@@ -64,7 +64,7 @@ public class twoDArray {
             }
 
             // print startCol
-            for (int i = (endRow - 1); i >= startRow + 1; i--) {
+            for (int i = (endRow - 1); i >= (startRow + 1); i--) {
                 if (startCol == endCol) {
                     break;
                 }
@@ -152,7 +152,7 @@ public class twoDArray {
 
         // spiralMatrix(matrix);
         // diagonalSumMatrix(matrix);
-        transpose(matrix);
+        // transpose(matrix);
 
         // int[][] matrix = { { 10, 20, 30, 40 },
         // { 15, 25, 35, 45 },
