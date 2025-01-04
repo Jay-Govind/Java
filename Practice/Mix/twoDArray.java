@@ -94,6 +94,18 @@ public class twoDArray {
         System.out.print("The sum of the diagonal elements is " + sum);
     }
 
+    // Transpose of a matrix
+    public static void transpose(int[][] matrix) {
+        int rows = matrix.length - 1;
+        int cols = matrix[0].length - 1;
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                matrix[i][j] = matrix[j][i];
+            }
+        }
+    }
+
     // Search in a sorted matrix
     public static int[] searchInSortedMatrix(int[][] matrix, int target) {
         int rows = matrix.length - 1;
@@ -117,15 +129,15 @@ public class twoDArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // System.out.print("Enter the number of rows: ");
-        // int rows = sc.nextInt();
-        // System.out.print("Enter the number of columns: ");
-        // int cols = sc.nextInt();
+        System.out.print("Enter the number of rows: ");
+        int rows = sc.nextInt();
+        System.out.print("Enter the number of columns: ");
+        int cols = sc.nextInt();
 
-        // int[][] matrix = new int[rows][cols];
+        int[][] matrix = new int[rows][cols];
 
-        // inputArr(matrix, rows, cols, sc);
-        // printArr(matrix, rows, cols);
+        inputArr(matrix, rows, cols, sc);
+        printArr(matrix, rows, cols);
 
         // Search in a matrix
         // System.out.print("Enter the element to search: ");
@@ -140,20 +152,21 @@ public class twoDArray {
 
         // spiralMatrix(matrix);
         // diagonalSumMatrix(matrix);
+        transpose(matrix);
 
-        
-        int[][] matrix = { { 10, 20, 30, 40 },
-                { 15, 25, 35, 45 },
-                { 27, 29, 37, 48 },
-                { 32, 33, 39, 50 } };
-        int target = 29;
-        int[] result = searchInSortedMatrix(matrix, target);
-        if (result[0] != -1 && result[1] != -1) {
-            System.out.println("Element found at position (" + (result[0] + 1) + ", " +
-                    (result[1] + 1) + ")");
-        } else {
-            System.out.println("Element not found");
-        }
+        // int[][] matrix = { { 10, 20, 30, 40 },
+        // { 15, 25, 35, 45 },
+        // { 27, 29, 37, 48 },
+        // { 32, 33, 39, 50 } };
+        // int target = 29;
+        // int[] result = searchInSortedMatrix(matrix, target);
+        // if (result[0] != -1 && result[1] != -1) {
+        //     System.out.println("Element found at position (" + (result[0] + 1) + ", " +
+        //             (result[1] + 1) + ")");
+        // } else {
+        //     System.out.println("Element not found");
+        // }
+
         sc.close();
     }
 }
