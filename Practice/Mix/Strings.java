@@ -35,9 +35,7 @@ public class Strings {
             }
         }
 
-        float dis = (float) Math.sqrt(x * x + y * y);
-        return dis;
-
+        return (float) Math.sqrt(x * x + y * y);
     }
 
     public static void main(String[] args) {
