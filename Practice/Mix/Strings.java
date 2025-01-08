@@ -1,6 +1,7 @@
 package Practice.Mix;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Strings {
 
@@ -79,6 +80,36 @@ public class Strings {
         return newStr.toString();
     }
 
+    // Count number of lowercase vowels in a string
+    public static int countLowercaseVowels(String str) {
+        int count = 0;
+        String vowels = "aeiou";
+        for (int i = 0; i < str.length(); i++) {
+            if (vowels.contains(str.charAt(i) + "")) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    // Check if two strings are anagrams
+    public static boolean anagrams(String str1, String str2) {
+        if (str1.length() != str2.length()) {
+            return false;
+        }
+
+        String newStr1 = str1.toLowerCase();
+        String newStr2 = str2.toLowerCase();
+
+        char[] arr1 = newStr1.toCharArray();
+        char[] arr2 = newStr2.toCharArray();
+
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+
+        return Arrays.equals(arr1, arr2);
+    }
+
     // Print largest string in lexicographical order
     public static String largestString(String[] str) {
         String largest = str[0];
@@ -93,13 +124,15 @@ public class Strings {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a string: ");
-        String str = sc.nextLine();
+        // System.out.print("Enter a string: ");
+        // String str = sc.nextLine();
 
         // System.out.println(isPalindrome(str));
         // System.out.println(shortestPath(str));
         // System.out.print(toUpperCase(str));
-        System.out.print(compress(str));
+        // System.out.print(compress(str));
+        // System.out.print(countLowercaseVowels(str));
+        // System.out.print(anagrams("earth", "heat"));
 
         // String str2[] = { "mouse", "moniter", "mousepad" };
         // System.out.println(largestString(str2));
