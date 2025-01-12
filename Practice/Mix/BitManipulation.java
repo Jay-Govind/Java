@@ -86,6 +86,14 @@ public class BitManipulation {
         return ans;
     }
 
+    // Swap the bits of a number
+    public static void swapBits(int num1, int num2) {
+        num1 = num1 ^ num2;
+        num2 = num1 ^ num2;
+        num1 = num1 ^ num2;
+
+        System.out.println(num1 + " " + num2);
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -95,8 +103,8 @@ public class BitManipulation {
         // System.out.println(5 ^ 6); // 3
         // System.out.println(~5); // -6
 
-        System.out.print("Ente the number : ");
-        int num = sc.nextInt();
+        // System.out.print("Ente the number : ");
+        // int num = sc.nextInt();
 
         // System.out.println(isEven(num) ? "Even" : "Odd");
         // System.out.println(getBit(num, 2));
@@ -109,6 +117,7 @@ public class BitManipulation {
         // System.out.println(powerOf2(num));
         // System.out.println(countSetBits(num));
         // System.out.println(fastExpo(num, 3)); // base, power
+        System.out.println(swapBits(5, 6));
 
         sc.close();
     }
