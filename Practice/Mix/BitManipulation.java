@@ -113,12 +113,11 @@ public class BitManipulation {
         // System.out.println(clearBit(num, 1));
         // System.out.println(updateBit(num, 1, 0)); // num, pos, value
         // System.out.println(clearIBits(num, 2));
-        // System.out.println(clearIBits(num, 2));
         // System.out.println(clearRangeBits(num, 2, 4)); // num, start, end
         // System.out.println(powerOf2(num));
         // System.out.println(countSetBits(num));
         // System.out.println(fastExpo(num, 3)); // base, power
-        swapBits(5, 6);
+        // swapBits(5, 6);
 
         sc.close();
     }
