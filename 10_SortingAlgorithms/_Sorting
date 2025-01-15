@@ -9,6 +9,13 @@ Sorting in Java
 
     ### Bubble Sort
         Definition - In this algoriths, we compare the adjacent elements and swap them if they are not in order.
+        time complexity - O(n^2)
+
+        Algorithm - 
+            1. Start with the first element and compare it with the next element.
+            2. If the element is greater than the next element, swap them.
+            3. Continue this process until the last element is reached.
+            4. Repeat the process for the remaining elements.
 
         Example -  (5, 1, 4, 3, 2)
             1st iteration - (from index 0 to n-2)
@@ -41,11 +48,13 @@ Sorting in Java
 
     ### Selection Sort
         Definition - In this algorithm, we compare the elements and swap them if they are not in order.
+        time complexity - O(n^2)
 
 
     ### Insertion Sort
         Definition - In this algorithm, we compare the elements and insert them in correct position.
-
+        time complexity - O(n^2)
 
     ### Counting Sort (Advance)
-        Definition - In this algorithm, we count the number of occurance of each element and insert it in correct position. It is used only for positive integer
+        Definition - In this algorithm, we count the number of occurance of each element and insert it in correct position. It is used only for positive integer.
+        time complexity - O(n+k)
