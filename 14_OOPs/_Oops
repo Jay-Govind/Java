@@ -1,8 +1,11 @@
-Concept of Oops
+Object Oriented Programming
 
-1. Object Oriented Programming - OOPs
-2. Encapsulation - Data Hiding 
-3. Abstraction 
-4. Inheritance
-5. Polymorphism
-6. Exception Handling
+Definition : 
+    OOPs is a programming paradigm that focuses on the concept of objects and their interactions. It is a way to structure code in a way that makes it easier to manage and reuse code.
+
+    
+    1. Classes and Objects :
+        A class is a template for creating objects, which are instances of that class.
+        An object is an instance of a class, and it has its own state and behavior.
+
+        Note : Object is "a real world entity" and Class is "a blueprint of a real world entity".
