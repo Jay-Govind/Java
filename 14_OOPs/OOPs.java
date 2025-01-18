@@ -1,31 +1,37 @@
 public class OOPs {
     public static void main(String[] args) {
         Pen p1 = new Pen();
-        p1.changeColor("Blue");
-        // p1.color = "Blue"; --> doesn't execute because this is not visible (private)
-        System.out.println(p1.color());
+
+        p1.Brand = "Parker";
+        p1.setColor("Black");
+        p1.setSize(5);
+
+        System.out.println(p1.Brand);
+        System.out.println(p1.getColor());
+        System.out.println(p1.getSize());
     }
 }
 
 class Pen {
-    private int tip;
+    String Brand;
     private String color;
+    private int size;
 
     // getters
-    String color() {
+    String getColor() {
         return this.color;
     }
 
-    int tip() {
-        return this.tip;
+    int getSize() {
+        return this.size;
     }
 
     // setters
-    void changeColor(String color) {
+    void setColor(String color) {
         this.color = color;
     }
 
-    void tipSize(int tip) {
-        this.tip = tip;
+    void setSize(int size) {
+        this.size = size;
     }
 }

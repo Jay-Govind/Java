@@ -1,11 +1,42 @@
 Object Oriented Programming
 
-Definition : 
-    OOPs is a programming paradigm that focuses on the concept of objects and their interactions. It is a way to structure code in a way that makes it easier to manage and reuse code.
+Definition :
+OOPs is a programming paradigm that focuses on the concept of objects and their interactions. It is a way to structure code in a way that makes it easier to manage and reuse code.
 
-    
     1. Classes and Objects :
         A class is a template for creating objects, which are instances of that class.
         An object is an instance of a class, and it has its own state and behavior.
 
-        Note : Object is "a real world entity" and Class is "a blueprint of a real world entity".
+        Note :
+            Object is "a real world entity" and Class is "a blueprint of a real world entity".
+
+
+    2. Access Modifiers :
+        Access Modifiers are used to control the accessibility of class members.
+
+        There are four types of access modifiers:
+            1. Public : accessible from anywhere.
+            2. Protected : accessible within the class and its subclasses.
+            3. Default : accessible within the same package.
+            4. Private : accessible only within the class.
+
+
+    3. Getters and Setters :
+        Getters and Setters are methods that allow you to access and modify the state of an object.
+        Getters are used to read the state of an object, while Setters are used to modify the state of an object.
+
+
+    4. Encapsulation :
+        Encapsulation is the process of bundling data and methods together into a single unit called a class. It also implements data hiding.
+
+
+    5. Constructors :
+        Constructors are special methods that are called when an object is created.
+        They are used to initialize the state of an object.
+
+        There are four types of constructors:
+            1. Default Constructor/Non-Parameterized Constructor : called when an object is created without any arguments.
+            2. Parameterized Constructor : called when an object is created with arguments.
+            3. Copy Constructor : called when an object is created by copying another object.
+
+        Note: Contructor Overloading is the process of creating multiple constructors with different parameters.
